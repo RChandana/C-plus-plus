@@ -1,6 +1,8 @@
 // Compile-time Polymorphism
 
 // Function Overloading 
+/* When there are multiple functions with same name but different parameters then these functions are said to be overloaded. 
+Functions can be overloaded by change in number of arguments or/and change in type of arguments.*/
 
 #include <iostream>
 using namespace std;
@@ -25,5 +27,4 @@ class Main{
         obj.func(10.50);
         obj.func(20, 30);
         return 0;
-    }
-
+}
