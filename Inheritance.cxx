@@ -72,6 +72,9 @@ int main(){
 
 
 // Multi-level Inheritance
+
+/* A derived class is created from another derived class.*/
+
 #include <iostream>
 using namespace std;
 class Mobile{
