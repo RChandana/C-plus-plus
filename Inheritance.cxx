@@ -153,4 +153,7 @@ int main(){
 
 // Multipath inheritance
 
-/* */
+/* A derived class with two base classes and these two base classes have one common base class is called multipath inheritance.
+Ambiguity can arise in this type of inheritance. 
+
+*/
