@@ -66,3 +66,25 @@ int main(){
     Samsung obj;
     return 0;
 }
+
+
+
+
+
+// Multi-level Inheritance
+#include <iostream>
+using namespace std;
+class Mobile{
+    public:
+    Mobile(){ cout << "Mobile Shop\n";}
+};
+class Gadget : public Mobile{
+    public:
+    Gadget(){cout << "Mobile is a gadget.";}
+};
+class Samsung : public Gadget{
+};
+int main(){
+    Samsung obj;
+    return 0;
+}
