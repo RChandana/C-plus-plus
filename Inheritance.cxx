@@ -114,3 +114,24 @@ int main(){
 
 
 //Hybrid (Virtual) Inheritance
+#include <iostream>
+using namespace std;
+class Mobile{
+    public:
+    Mobile(){ cout << "Mobile Shop\n";}
+};
+class Siri{
+    public:
+    Siri(){
+        cout << "Siri voice assistant is there only in Apple.";
+    }
+};
+class Apple : public Mobile, public Siri{
+};
+class Samsung : public Mobile{
+};
+int main(){
+    Samsung obj1;
+    Apple obj2;
+    return 0;
+}
