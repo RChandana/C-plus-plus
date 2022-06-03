@@ -44,3 +44,25 @@ class D : private A{
     //cout << "y is private"
     //cout << "z is inaccessible"
 };
+
+
+
+
+
+// Multiple Inheritance
+#include <iostream>
+using namespace std;
+class Mobile{
+    public:
+    Mobile(){ cout << "Mobile Shop\n";}
+};
+class Gadget{
+    public:
+    Gadget(){cout << "Mobile is a gadget.";}
+};
+class Samsung : public Mobile, public Gadget{
+};
+int main(){
+    Samsung obj;
+    return 0;
+}
