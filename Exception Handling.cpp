@@ -5,7 +5,8 @@ catch: represents a block of code that is executed when a particular exception i
 throw: Used to throw an exception. Also used to list the exceptions that a function throws, but doesn’t handle itself.*/
 
 
-// Simple Code for Exception Handling
+// Simple Code for Exception Handling using try-catch block.
+
 #include <iostream>
 using namespace std;
 int main(){
