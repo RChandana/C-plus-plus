@@ -154,6 +154,41 @@ int main(){
 // Multipath inheritance
 
 /* A derived class with two base classes and these two base classes have one common base class is called multipath inheritance.
-Ambiguity can arise in this type of inheritance. 
+Ambiguity can arise in this type of inheritance. */
 
-*/
+#include <iostream>
+using namespace std;
+class A{
+    public:
+        int a;
+};
+class B : public A{
+    public:
+    int b;
+};
+class C : public A{
+    public:
+    int c;
+};
+class D : public B, public C{
+    public:
+    int d;
+};
+
+int main(){
+    D obj;
+    obj.B::a = 20;
+    obj.C::a = 30;
+    
+    obj.b = 100;
+    obj.c = 200;
+    obj.d = 300;
+    
+    cout << "a of class B : " << obj.B::a;
+    cout << "\na of class C : " << obj.C::a;
+    
+    cout << "\nvalue of b : " << obj.b;
+    cout << "\nvalue of c : " << obj.c;
+    cout << "\nvalue of d : " << obj.d;
+    return 0;
+}
