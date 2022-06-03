@@ -88,3 +88,23 @@ int main(){
     Samsung obj;
     return 0;
 }
+
+
+
+
+//Hierarchical Inheritance
+#include <iostream>
+using namespace std;
+class Mobile{
+    public:
+    Mobile(){ cout << "Mobile Shop\n";}
+};
+class Apple : public Mobile{
+};
+class Samsung : public Mobile{
+};
+int main(){
+    Samsung obj1;
+    Apple obj2;
+    return 0;
+}
