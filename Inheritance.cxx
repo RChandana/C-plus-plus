@@ -93,6 +93,10 @@ int main(){
 
 
 //Hierarchical Inheritance
+
+/* More than one subclass is inherited from a single base class. 
+i.e. more than one derived class is created from a single base class.*/
+
 #include <iostream>
 using namespace std;
 class Mobile{
