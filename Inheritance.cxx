@@ -108,3 +108,9 @@ int main(){
     Apple obj2;
     return 0;
 }
+
+
+
+
+
+//Hybrid (Virtual) Inheritance
