@@ -192,3 +192,6 @@ int main(){
     cout << "\nvalue of d : " << obj.d;
     return 0;
 }
+
+/*If we need to access the data member of A through the object of D, we must specify the path from which a will be accessed,
+whether it is from B or C, because compiler can’t differentiate between two copies of A in D.*/
