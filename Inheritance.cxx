@@ -195,3 +195,40 @@ int main(){
 
 /*If we need to access the data member of A through the object of D, we must specify the path from which a will be accessed,
 whether it is from B or C, because compiler can’t differentiate between two copies of A in D.*/
+
+// Avoid this ambiguity using Virtual Base Class 
+
+#include <iostream>
+using namespace std;
+class A{
+    public:
+        int a;
+};
+class B : virtual public A{
+    public:
+    int b;
+};
+class C : virtual public A{
+    public:
+    int c;
+};
+class D : public B, public C{
+    public:
+    int d;
+};
+
+int main(){
+    D obj;
+    obj.B::a = 20;
+    obj.C::a = 30;
+    
+    obj.b = 100;
+    obj.c = 200;
+    obj.d = 300;
+    
+    cout << "\na : " << obj.a;
+    cout << "\nb : " << obj.b;
+    cout << "\nc : " << obj.c;
+    cout << "\nd : " << obj.d << '\n';
+    return 0;
+}
