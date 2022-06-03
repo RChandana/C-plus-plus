@@ -114,6 +114,10 @@ int main(){
 
 
 //Hybrid (Virtual) Inheritance
+
+/*Hybrid Inheritance is implemented by combining more than one type of inheritance. 
+For example: Combining Hierarchical inheritance and Multiple Inheritance. */
+
 #include <iostream>
 using namespace std;
 class Mobile{
