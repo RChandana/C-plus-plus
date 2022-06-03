@@ -146,3 +146,11 @@ int main(){
     Apple obj2;
     return 0;
 }
+
+
+
+
+
+// Multipath inheritance
+
+/* */
