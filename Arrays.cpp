@@ -48,3 +48,33 @@ int main(){
     }
     return 0;
 }
+
+
+
+
+
+
+
+
+//
+#include <iostream>
+using namespace std;
+int main(){
+    int n, x, i;
+    cin >> n;
+    int arr[n];
+    cout << "Enter the numbers : \n";
+    for(int i = 0; i < n; ++i)
+    cin >> arr[i];
+    cout << "Enter the number that you want to search for : "; 
+    cin >> x;
+    for(i = 0; i < n; i++){
+        if ( x == arr[n]){
+            cout << "Your number is : " << x;
+        }
+        else (x != arr[n]);{ 
+            cout << "Error";
+        }
+    return 0;
+}
+}
