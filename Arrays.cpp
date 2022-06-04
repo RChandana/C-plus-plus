@@ -35,7 +35,8 @@ int main(){
 #include <iostream>
 using namespace std;
 int main(){
-    int arr[5], n;
+    int n;
+    int arr[n];
     cin >> n;
     cout << "Enter the numbers : \n";
     for(int i = 0; i < n; i++){
