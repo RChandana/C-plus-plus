@@ -62,25 +62,25 @@ int main(){
 using namespace std;
 int main(){
     int n, x, i, f = 1;
+    cout << "Enter the number of elements : ";
     cin >> n;
     int arr[n];
     cout << "Enter the numbers : \n";
     for(int i = 0; i < n; ++i)
     cin >> arr[i];
-    cout << "Enter the number that you want to search for : "; 
+    cout << "Enter the number that you want to search for : \n "; 
     cin >> x;
     for(i = 0; i < n; i++){
         if ( x == arr[i]){
-            cout << "Your number is : " << x;
             f = 0;
             break;
         }
     }
         if (f == 0){
-        cout << "found";
+        cout << "Your required number " << x << " is found";
         }
         else{
-        cout << "not found";
+        cout << "Your required number " << x << " not found";
         }
     return 0;
 }
