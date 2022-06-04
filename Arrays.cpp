@@ -28,3 +28,22 @@ int main(){
     }
     return 0;
 }
+
+
+// User input for the max array size
+
+#include <iostream>
+using namespace std;
+int main(){
+    int arr[5], n;
+    cin >> n;
+    cout << "Enter the numbers : \n";
+    for(int i = 0; i < n; i++){
+        cin >> arr[i];
+    }
+    cout << "The array is : ";
+    for(int i = 0; i < n; i++){
+        cout  << arr[i] ;
+    }
+    return 0;
+}
