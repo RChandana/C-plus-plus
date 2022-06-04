@@ -56,11 +56,12 @@ int main(){
 
 
 
-//
+// Searching a number in an array.
+
 #include <iostream>
 using namespace std;
 int main(){
-    int n, x, i;
+    int n, x, i, f = 1;
     cin >> n;
     int arr[n];
     cout << "Enter the numbers : \n";
@@ -69,12 +70,17 @@ int main(){
     cout << "Enter the number that you want to search for : "; 
     cin >> x;
     for(i = 0; i < n; i++){
-        if ( x == arr[n]){
+        if ( x == arr[i]){
             cout << "Your number is : " << x;
+            f = 0;
+            break;
         }
-        else (x != arr[n]);{ 
-            cout << "Error";
+    }
+        if (f == 0){
+        cout << "found";
+        }
+        else{
+        cout << "not found";
         }
     return 0;
-}
 }
