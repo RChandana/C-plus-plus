@@ -120,3 +120,49 @@ int main(){
      cout << arr[i];
     return 0;
 }
+
+
+
+
+// Code merging two arrays and printing them.
+
+#include <iostream>
+using namespace std;
+int main(){
+    int n, m, y;
+    cout << "Enter the number of elements(n) : ";
+    cin >> n;
+    int a = arr[n];
+    cout << "Enter the numbers(n) : \n";
+    for(int i = 0; i < n; i++){
+        cin >> arr[i];
+    }
+    cout << "The array is : ";
+    for(int i = 0; i < n; i++){
+        cout << arr[i] ;
+    };
+    cout << "Enter the number of elements(m) : ";
+    cin >> m;
+    int b = arr[m];
+    cout << "Enter the numbers(m) : \n";
+    for(int j = 0; j < m; j++){
+        cin >> arr[j];
+    }
+    cout << "The array is : ";
+    for(int j = 0; j < m; j++){
+        cout << arr[j] ;
+    }
+    //cout << "\nThe array in ascending order is : ";
+    //for(int i = 0; i < n - 1; i++){
+      //  for(int j = 0; j < n - i - 1; j++){
+        //    if (arr[j] > arr[j + 1]){
+          //      y = arr[j];
+            //    arr[j] = arr[j+1];
+              //  arr[j+1] = y;
+            //}
+        //}
+    //}
+    //for (int i = 0; i < n; i++)
+     //cout << arr[i];
+    return 0;
+}
